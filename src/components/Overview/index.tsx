@@ -1,5 +1,6 @@
 import React from 'react'
 import { CheckCircle, ListChecks, Warning } from "@phosphor-icons/react";
+import { useGetChecklistsQuery } from '../../graphql/generated';
 
 import * as C from "./styles";
 
@@ -25,6 +26,12 @@ const results = [
 ]
 
 export const Overview: React.FC = () => {
+  const { data } = useGetChecklistsQuery();
+
+  const totalChecklists = data?.checklists.length;
+  const totalSuccessChecklists = data?.checklists.filter((checklist) => checklist.result === true).length;
+  const totalFailedChecklists = data?.checklists.filter((checklist) => checklist.result === false).length;
+
   return (
     <C.Container>
       <h1>Visão Geral</h1>
@@ -33,15 +40,27 @@ export const Overview: React.FC = () => {
           
         </C.Graphic>
         <C.Info>
-          {results.map((result) => (
-            <C.Item key={result.value}>
-              {result.icon}
-              <div>
-                <span>{result.title}</span>
-                <span>{result.value}</span>
-              </div>
-            </C.Item>
-          ))}
+          <C.Item>
+            <ListChecks size={32} weight="fill" />
+            <div>
+              <span>Checklists</span>
+              <span>{totalChecklists}</span>
+            </div>
+          </C.Item>
+          <C.Item>
+            <CheckCircle size={32} weight="fill" />
+            <div>
+              <span>Sucessos</span>
+              <span>{totalSuccessChecklists}</span>
+            </div>
+          </C.Item>
+          <C.Item>
+            <Warning size={32} weight="fill" />
+            <div>
+              <span>Fracassos</span>
+              <span>{totalFailedChecklists}</span>
+            </div>
+          </C.Item>
         </C.Info>
       </C.Grid>
     </C.Container>

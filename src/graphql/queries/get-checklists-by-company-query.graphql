@@ -1,0 +1,10 @@
+query GetChecklistsByCompany ($company: String!) {
+  checklists(where: {company: $company}) {
+    id
+    duration
+    company
+    name
+    result
+    createdAt
+  }
+}

@@ -6,13 +6,25 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.12",
+    "@graphql-codegen/cli": "^3.3.0",
+    "@graphql-codegen/typescript": "^3.0.3",
+    "@graphql-codegen/typescript-operations": "^3.0.3",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@phosphor-icons/react": "^2.0.8",
+    "@radix-ui/react-accordion": "^1.1.1",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.29.3",
+    "graphql": "^16.6.0",
+    "moment": "^2.29.4",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "react-switch": "^7.0.0",
     "styled-components": "^5.3.9"

@@ -4,6 +4,10 @@ interface MenuProps {
   showMenu: boolean;
 }
 
+interface ActiveItem {
+  active: boolean;
+}
+
 export const Container = styled.div<MenuProps>`
   margin: 3.125rem 0;
   display: grid;
@@ -25,47 +29,6 @@ export const Container = styled.div<MenuProps>`
       margin-bottom: 1.5rem;
       text-transform: uppercase;
     }
-
-    ul {
-      li {
-        list-style: none;
-        margin-bottom: 2rem;
-
-        &:hover {
-          a {
-            span {
-              color: ${({ theme }) => theme.colors.green200};
-              font-weight: 600;
-            }
-
-            svg {
-              color: ${({ theme}) => theme.colors.white};
-              background: ${({ theme }) => theme.colors.green900};
-            }
-          }
-        }
-
-        a {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-
-          span {
-            font-size: 0.875rem;
-            color: ${({ theme }) => theme.colors.gray};
-            transition: 0.2s;
-          }
-
-          svg {
-            color: ${({ theme }) => theme.colors['white/gray900']};
-            background: ${({ theme }) => theme.colors["gray700/white200"]};
-            padding: 0.5rem;
-            border-radius: 12px;
-            transition: 0.2s;
-          }
-        }
-      }
-    }
   }
 
   @media (max-width: 1260px) {
@@ -75,8 +38,47 @@ export const Container = styled.div<MenuProps>`
     padding: 2rem;
     bottom: 0;
     z-index: 1;
-    background: ${({ theme}) => theme.colors.primary};
+    background: ${({ theme }) => theme.colors.primary};
     margin: 0;
+  }
+`;
+
+export const Item = styled.li`
+  list-style: none;
+  margin-bottom: 2rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      font-size: 0.875rem;
+      color: ${({ theme }) => theme.colors.gray};
+      transition: 0.2s;
+    }
+
+    svg {
+      color: ${({ theme }) => theme.colors["white/gray900"]};
+      background: ${({ theme }) => theme.colors["gray700/white200"]};
+      padding: 0.5rem;
+      border-radius: 12px;
+      transition: 0.2s;
+    }
+  }
+
+  &:hover {
+    a {
+      span {
+        color: ${({ theme }) => theme.colors.green200};
+        font-weight: 600;
+      }
+
+      svg {
+        color: ${({ theme }) => theme.colors.white};
+        background: ${({ theme }) => theme.colors.green900};
+      }
+    }
   }
 `;
 

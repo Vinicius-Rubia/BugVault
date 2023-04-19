@@ -7,6 +7,8 @@ import light from "./styles/themes/light"
 import dark from "./styles/themes/dark"
 import { SideBar } from "./components/SideBar"
 import Router from "./routes/router"
+import { ApolloProvider } from "@apollo/client"
+import { client } from "./lib/apollo"
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark)
@@ -16,6 +18,7 @@ function App() {
   }
 
   return (
+    <ApolloProvider client={client}>
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <div id="layout">
@@ -28,6 +31,7 @@ function App() {
       </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
+    </ApolloProvider>
   )
 }
 

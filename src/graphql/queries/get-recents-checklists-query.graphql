@@ -1,0 +1,17 @@
+query GetRecentsChecklists {
+  checklists(orderBy: publishedAt_DESC, first: 4) {
+    company
+    duration
+    id
+    name
+    publishedAt
+    result
+    slug
+    logo {
+      url
+    }
+    imagePost {
+      url
+    }
+  }
+}

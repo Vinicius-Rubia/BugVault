@@ -1,0 +1,9 @@
+query GetChecklist($id: ID) {
+  checklist(where: {id: $id}) {
+    company
+    name
+    duration
+    result
+    createdAt
+  }
+}

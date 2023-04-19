@@ -1,14 +1,24 @@
-import React from 'react'
+import React from "react";
 
+import { Overview } from "../../components/Overview";
+import { RecentTests } from "../../components/RecentTests";
+import { useParams } from "react-router-dom";
+import { Checklists } from "../Checklists";
 import * as C from "./styles";
-import { Overview } from '../../components/Overview';
-import { RecentTests } from '../../components/RecentTests';
 
 export const Home: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+
   return (
     <C.Container>
-      <Overview />
-      <RecentTests />
+      {slug ? (
+        <Checklists/>
+      ) : (
+        <>
+          <Overview />
+          <RecentTests />
+        </>
+      )}
     </C.Container>
-  )
-}
+  );
+};
