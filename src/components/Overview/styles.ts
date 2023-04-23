@@ -20,7 +20,6 @@ export const Grid = styled.div`
 
   @media (max-width: 1030px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr
   }
 `;
 

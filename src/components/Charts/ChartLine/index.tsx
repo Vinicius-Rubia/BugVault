@@ -31,8 +31,7 @@ export const ChartLine: React.FC = () => {
       pointBorderColor: "transparent",
       hoverBackgroundColor: "#ffffff",
       hoverBorderColor: "#ffffff",
-      pointBorderWidth: 4,
-      fontColor: "#FFF"
+      pointBorderWidth: 4
     }, {
       label: "Sucessos",
       data: [4, 4, 6, 5, 6, 6, 7],
@@ -41,7 +40,7 @@ export const ChartLine: React.FC = () => {
       hoverBackgroundColor: "#ffffff",
       hoverBorderColor: "#ffffff",
       pointBorderColor: "transparent",
-      pointBorderWidth: 4,
+      pointBorderWidth: 4
     }]
   };
 
