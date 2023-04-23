@@ -4,7 +4,14 @@ interface IProps {
   result: string;
 }
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  h1 {
+    font-size: 2.5rem;
+    color: ${({ theme }) => theme.colors["white/gray900"]};
+    text-transform: capitalize;
+    margin: 2.5rem 0 1.75rem;
+  }
+`;
 
 export const Grid = styled.div`
   display: grid;

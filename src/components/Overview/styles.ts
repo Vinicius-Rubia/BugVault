@@ -26,17 +26,18 @@ export const Grid = styled.div`
 
 export const Graphic = styled.div`
   background: linear-gradient(180deg, #13538A 0%, rgba(19, 83, 138, 0.20) 100%);
+  padding: 1rem;
 `;
 
 export const Info = styled.div`
   background: linear-gradient(180deg, #22B07D 0%, rgba(6, 148, 148, 0.50) 99.73%);
   padding: 1.25rem 1.5625rem;
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media (max-width: 1030px) {
+    height: 350px;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -71,6 +72,7 @@ export const Item = styled.div`
   @media (max-width: 1030px) {
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
 
   @media (max-width: 400px) {

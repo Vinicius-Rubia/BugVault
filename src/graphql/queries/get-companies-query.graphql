@@ -1,7 +1,0 @@
-query GetCompanies {
-  companies {
-    name
-    id
-    url
-  }
-}

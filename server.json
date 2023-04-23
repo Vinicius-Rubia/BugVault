@@ -1,0 +1,120 @@
+{
+  "checklists": [
+    {
+      "id": "df50d059-9d8d-40a0-a20c-0fa9de8e5254",
+      "company": "SKY",
+      "name": "Portal",
+      "duration": "14.3 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_c81b4fb0-7bd4-4493-9f89-05b48b0086c1.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=pEEZD9xnZ32QS%2FO5ztEPEi6Y%2BIQ%3D&Expires=1997483891",
+      "slug": "sky",
+      "result": true,
+      "createdAt": "2023-04-22T00:38:11.640821Z"
+    },
+    {
+      "id": "bf2f57e1-46d8-4579-a57a-96b328000bd8",
+      "company": "Claro",
+      "name": "Preços",
+      "duration": "14.3 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_89d8852a-b414-436c-b019-81ca9ce81a1d.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=Tm2IYklKWCcl2tPEdE9KsMRKCBI%3D&Expires=1997484014",
+      "slug": "claro",
+      "result": true,
+      "createdAt": "2023-04-22T00:40:14.195017Z"
+    },
+    {
+      "id": "9d4dc576-c537-46a5-862a-26bda99a2c11",
+      "company": "Neo Energia",
+      "name": "Portal",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_ef945839-2c8b-44a2-b801-cbbc2678665b.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=NrhpLULkXeW%2B%2Frn9YEZS55o9IOo%3D&Expires=1997484062",
+      "slug": "neo-energia",
+      "result": false,
+      "createdAt": "2023-04-22T00:41:02.948915Z"
+    },
+    {
+      "id": "6163733d-cb33-4d97-9262-8d9262e6ca93",
+      "company": "Negocie Online",
+      "name": "Portal",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_17909e1b-484b-428e-86d1-0b69e8624195.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=A9dJdObUWrQJxhHsKryzdNizOj8%3D&Expires=1997484094",
+      "slug": "negocie-online",
+      "result": true,
+      "createdAt": "2023-04-22T00:41:34.275211Z"
+    },
+    {
+      "id": "a0902ff9-175b-4325-a788-e1c38b836825",
+      "company": "Negocie Online",
+      "name": "Portal",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_fd0561b8-2294-4cb0-a539-056cf800323f.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=UUa1AhJncQqI6vjTWJtnlwf1jpA%3D&Expires=1997484149",
+      "slug": "negocie-online",
+      "result": true,
+      "createdAt": "2023-04-22T00:42:29.391446Z"
+    },
+    {
+      "id": "3a4a5a25-182a-43ea-a0be-b64b308bcef1",
+      "company": "Negocie Online",
+      "name": "Portal",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/error_eb9f292f-ede8-4384-8da1-804731d3c84e.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=x21zx5qzeGzizB21mjqvoc1RnI4%3D&Expires=1997484326",
+      "slug": "negocie-online",
+      "result": false,
+      "createdAt": "2023-04-22T00:45:26.296873Z"
+    },
+    {
+      "id": "9479fbec-258b-4aec-8311-25d3ce6216c1",
+      "company": "SKY",
+      "name": "Promoções",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_ee924615-09a1-4724-8434-de656a1dadad.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=DrpD9MglsLsnZwiX7UI%2BQZvyjjc%3D&Expires=1997490733",
+      "slug": "sky",
+      "result": true,
+      "createdAt": "2023-04-22T02:32:13.469530Z"
+    },
+    {
+      "id": "2b72d32b-78bb-4390-9b0c-73616277b8cf",
+      "company": "SKY",
+      "name": "Portal",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_ec2768e0-ebdf-4bed-87b7-8b08e6db9cce.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=DWUyBctl1xC9GrTJULgtiTzCkc0%3D&Expires=1997491493",
+      "slug": "sky",
+      "result": true,
+      "createdAt": "2023-04-22T02:44:53.378838Z"
+    },
+    {
+      "id": "61c040ce-bcd9-461a-903b-32ec03200c88",
+      "company": "SKY",
+      "name": "Portal",
+      "duration": "7.0 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_39eb073f-dea7-4a89-a888-e1bbf0ebd212.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=Gc6F4BUjEF6rEHw0z2pCC44xq7E%3D&Expires=1997492154",
+      "slug": "sky",
+      "result": true,
+      "createdAt": "2023-04-22T02:55:54.513085Z"
+    }
+  ],
+  "companies": [
+    {
+      "id": "clgjrkpa47vct0blq3id55p0f",
+      "name": "SKY",
+      "slug": "sky",
+      "createdAt": "2023-04-16T18:52:16.229727+00:00"
+    },
+    {
+      "id": "clgjrkz107tj10bkgv8mi7kga",
+      "name": "Neo Energia",
+      "slug": "neo-energia",
+      "createdAt": "2023-04-16T18:52:28.878021+00:00"
+    },
+    {
+      "id": "clgjrl5l87tk80bkg3h3wysb8",
+      "name": "Claro",
+      "slug": "claro",
+      "createdAt": "2023-04-16T18:52:37.385979+00:00"
+    },
+    {
+      "id": "clgjrlesj7tla0bkgnq3cd04n",
+      "name": "Negocie Online",
+      "slug": "negocie-online",
+      "createdAt": "2023-04-16T18:52:49.313081+00:00"
+    }
+  ]
+}
