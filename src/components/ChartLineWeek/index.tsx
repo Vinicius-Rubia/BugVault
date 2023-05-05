@@ -1,5 +1,5 @@
 import React from 'react'
-import * as C from "./styles";
+import { Line } from "react-chartjs-2";
 
 import {
   Chart as ChartJS,
@@ -20,32 +20,43 @@ ChartJS.register(
   Legend,
 )
 
-export const ChartLine: React.FC = () => {
+export const ChartLineWeek: React.FC = () => {
+
   const data = {
-    labels: ["Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"],
+    labels: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
     datasets: [{
-      label: "Fracassos",
-      data: [2, 0, 1, 3, 2, 2, 3],
-      backgroundColor: "#ff0000",
-      borderColor: "#ff000099",
-      pointBorderColor: "transparent",
-      hoverBackgroundColor: "#ffffff",
+      label: "Sucessos",
+      data: [2, 7, 1, 3, 2, 2, 3],
+      borderColor: "#66CA74",
       hoverBorderColor: "#ffffff",
+      backgroundColor: "#66CA74",
+      hoverBackgroundColor: "#05b61f",
       pointBorderWidth: 4
     }, {
-      label: "Sucessos",
-      data: [4, 4, 6, 5, 6, 6, 7],
-      backgroundColor: "#00ff26",
-      borderColor: "#00ff267f",
-      hoverBackgroundColor: "#ffffff",
+      label: "Fracassos",
+      data: [6, 2, 5, 1, 8, 9, 5],
+      borderColor: "#E23A3A",
       hoverBorderColor: "#ffffff",
-      pointBorderColor: "transparent",
+      backgroundColor: "#E23A3A",
+      hoverBackgroundColor: "#d60404",
+      pointBorderWidth: 4
+    }, {
+      label: "Total de checklists",
+      data: [8, 9, 6, 4, 10, 11, 8],
+      borderColor: "#73CAD6",
+      hoverBorderColor: "#ffffff",
+      backgroundColor: "#73CAD6",
+      hoverBackgroundColor: "#00e1ff",
       pointBorderWidth: 4
     }]
   };
 
   const options = {
     responsive: true,
+    interaction: {
+      mode: 'index' as const,
+      intersect: false,
+    },
     plugins: {
       legend: {
         display: true,
@@ -67,6 +78,6 @@ export const ChartLine: React.FC = () => {
   }
 
   return (
-    <C.ChartLine data={data} options={options}></C.ChartLine>
+    <Line data={data} options={options}></Line>
   )
 }

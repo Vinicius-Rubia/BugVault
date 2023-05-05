@@ -4,10 +4,26 @@ interface IProps {
   result: string;
 }
 
-export const Container = styled.div`
+export const Container = styled.div``;
+
+export const Header = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.75rem 0 1.75rem;
+
   h2 {
-    margin: 3.75rem 0 1.75rem;
     color: ${({ theme }) => theme.colors["white/gray900"]};
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors["white/gray900"]};
+    font-weight: 600;
+    transition: 0.2s;
+
+    :hover {
+      color: ${({ theme }) => theme.colors.green200};
+    }
   }
 `;
 

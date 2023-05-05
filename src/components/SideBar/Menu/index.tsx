@@ -21,8 +21,8 @@ const categories = [
   },
   {
     id: 3,
-    category: "Compatibilidade",
-    to: "/compatibility",
+    category: "Suporte",
+    to: "/suport",
     icon: <CheckFat size={32} weight="fill" />,
   },
   {

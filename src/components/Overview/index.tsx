@@ -1,33 +1,31 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from "react";
 import { CheckCircle, ListChecks, Warning } from "@phosphor-icons/react";
-import { ChartLine } from '../Charts/ChartLine';
-import { api } from '../../lib/axios';
+import { useSelector } from "react-redux";
+import { selectChecklists } from "../../redux/checklistsSlice";
+import { ChartBar } from "../ChartBar";
+import { fetchChecklists } from "../../services/checklistService";
 
 import * as C from "./styles";
 
 export const Overview: React.FC = () => {
-  const [ checklists, setChecklists ] = useState([]);
+  const allChecklists = useSelector(selectChecklists);
 
   useEffect(() => {
-    const fetchChecklists = async() => {
-      const checklistsResponse = await api.get("checklists");
-      
-      setChecklists(checklistsResponse.data);
+    if (allChecklists.checklists.length === 0) {
+      fetchChecklists();
     }
+  }, [allChecklists.checklists]);
 
-    fetchChecklists();
-  }, []);
-
-  const totalChecklists = checklists.length;
-  const totalSuccessChecklists = checklists.filter((checklist: any) => checklist.result === true).length;
-  const totalFailedChecklists = checklists.filter((checklist: any) => checklist.result === false).length;
+  const totalChecklists = allChecklists.checklists ? allChecklists.checklists.length : 0;
+  const totalSuccessChecklists = allChecklists.checklists ? allChecklists.checklists.filter((checklist: any) => checklist.result === true).length : 0;
+  const totalFailedChecklists = allChecklists.checklists ? allChecklists.checklists.filter((checklist: any) => checklist.result === false).length : 0;
 
   return (
     <C.Container>
       <h1>Visão Geral</h1>
       <C.Grid>
         <C.Graphic>
-          <ChartLine />
+          <ChartBar />
         </C.Graphic>
         <C.Info>
           <C.Item>
@@ -54,5 +52,5 @@ export const Overview: React.FC = () => {
         </C.Info>
       </C.Grid>
     </C.Container>
-  )
-}
+  );
+};

@@ -8,7 +8,7 @@
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_c81b4fb0-7bd4-4493-9f89-05b48b0086c1.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=pEEZD9xnZ32QS%2FO5ztEPEi6Y%2BIQ%3D&Expires=1997483891",
       "slug": "sky",
       "result": true,
-      "createdAt": "2023-04-22T00:38:11.640821Z"
+      "createdAt": "2023-05-04 05:38:11.640"
     },
     {
       "id": "bf2f57e1-46d8-4579-a57a-96b328000bd8",
@@ -18,7 +18,7 @@
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_89d8852a-b414-436c-b019-81ca9ce81a1d.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=Tm2IYklKWCcl2tPEdE9KsMRKCBI%3D&Expires=1997484014",
       "slug": "claro",
       "result": true,
-      "createdAt": "2023-04-22T00:40:14.195017Z"
+      "createdAt": "2023-05-03 11:40:14.195"
     },
     {
       "id": "9d4dc576-c537-46a5-862a-26bda99a2c11",
@@ -27,8 +27,8 @@
       "duration": "5.2 sec",
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_ef945839-2c8b-44a2-b801-cbbc2678665b.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=NrhpLULkXeW%2B%2Frn9YEZS55o9IOo%3D&Expires=1997484062",
       "slug": "neo-energia",
-      "result": false,
-      "createdAt": "2023-04-22T00:41:02.948915Z"
+      "result": true,
+      "createdAt": "2023-05-02 18:22:25.361"
     },
     {
       "id": "6163733d-cb33-4d97-9262-8d9262e6ca93",
@@ -37,8 +37,18 @@
       "duration": "5.2 sec",
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_17909e1b-484b-428e-86d1-0b69e8624195.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=A9dJdObUWrQJxhHsKryzdNizOj8%3D&Expires=1997484094",
       "slug": "negocie-online",
-      "result": true,
-      "createdAt": "2023-04-22T00:41:34.275211Z"
+      "result": false,
+      "createdAt": "2023-05-01 22:22:25.361"
+    },
+    {
+      "id": "6163733d-cbd33-4d97-9262-8d9262e6ca93",
+      "company": "Negocie Online",
+      "name": "Portal",
+      "duration": "5.2 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_17909e1b-484b-428e-86d1-0b69e8624195.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=A9dJdObUWrQJxhHsKryzdNizOj8%3D&Expires=1997484094",
+      "slug": "negocie-online",
+      "result": false,
+      "createdAt": "2023-04-30 10:22:25.361"
     },
     {
       "id": "a0902ff9-175b-4325-a788-e1c38b836825",
@@ -48,7 +58,7 @@
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_fd0561b8-2294-4cb0-a539-056cf800323f.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=UUa1AhJncQqI6vjTWJtnlwf1jpA%3D&Expires=1997484149",
       "slug": "negocie-online",
       "result": true,
-      "createdAt": "2023-04-22T00:42:29.391446Z"
+      "createdAt": "2023-04-25 07:22:25.361"
     },
     {
       "id": "3a4a5a25-182a-43ea-a0be-b64b308bcef1",
@@ -57,8 +67,8 @@
       "duration": "5.2 sec",
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/error_eb9f292f-ede8-4384-8da1-804731d3c84e.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=x21zx5qzeGzizB21mjqvoc1RnI4%3D&Expires=1997484326",
       "slug": "negocie-online",
-      "result": false,
-      "createdAt": "2023-04-22T00:45:26.296873Z"
+      "result": true,
+      "createdAt": "2023-04-26 07:22:25.361"
     },
     {
       "id": "9479fbec-258b-4aec-8311-25d3ce6216c1",
@@ -68,7 +78,7 @@
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_ee924615-09a1-4724-8434-de656a1dadad.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=DrpD9MglsLsnZwiX7UI%2BQZvyjjc%3D&Expires=1997490733",
       "slug": "sky",
       "result": true,
-      "createdAt": "2023-04-22T02:32:13.469530Z"
+      "createdAt": "2023-04-01 07:22:25.361"
     },
     {
       "id": "2b72d32b-78bb-4390-9b0c-73616277b8cf",
@@ -77,8 +87,8 @@
       "duration": "5.2 sec",
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_ec2768e0-ebdf-4bed-87b7-8b08e6db9cce.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=DWUyBctl1xC9GrTJULgtiTzCkc0%3D&Expires=1997491493",
       "slug": "sky",
-      "result": true,
-      "createdAt": "2023-04-22T02:44:53.378838Z"
+      "result": false,
+      "createdAt": "2023-04-01 09:22:25.361"
     },
     {
       "id": "61c040ce-bcd9-461a-903b-32ec03200c88",
@@ -87,8 +97,58 @@
       "duration": "7.0 sec",
       "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_39eb073f-dea7-4a89-a888-e1bbf0ebd212.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=Gc6F4BUjEF6rEHw0z2pCC44xq7E%3D&Expires=1997492154",
       "slug": "sky",
+      "result": false,
+      "createdAt": "2023-04-01 11:22:25.361"
+    },
+    {
+      "id": "d10cc23e-c66b-42f7-9825-0e7dd09163b5",
+      "company": "SKY",
+      "name": "Portal App",
+      "duration": "8.0 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_32e86ed0-d21c-425f-bcf5-b98ca157123c.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=FgGVoH%2F6qF3vNY7OC3Ea5CTAgz0%3D&Expires=1997918669",
+      "slug": "sky",
+      "result": false,
+      "createdAt": "2023-04-01 10:24:29.970"
+    },
+    {
+      "id": "d8629307-764b-4941-beb1-04b5b7a8256d",
+      "company": "SKY",
+      "name": "Teste Portal",
+      "duration": "3.0 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_c0d77420-c262-4355-9f2d-4b650f43504a.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=agr3p5sGy3EnIfY6tv8p8n39g30%3D&Expires=1997961607",
+      "slug": "sky",
+      "result": false,
+      "createdAt": "2023-04-02 10:20:07.538"
+    },
+    {
+      "id": "d3dd0ac6-30f3-4612-8815-da2379ddaee2",
+      "company": "SKY",
+      "name": "Teste Portal",
+      "duration": "3.0 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_e01f5a84-5794-4a5f-adff-0ae5138366b7.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=UsamH92XC%2FJTskIn6h6txdF3Gn0%3D&Expires=1997961757",
+      "slug": "sky",
       "result": true,
-      "createdAt": "2023-04-22T02:55:54.513085Z"
+      "createdAt": "2023-04-02 10:22:37.334"
+    },
+    {
+      "id": "d3dd0ac62-30f3-4612-8815-da2379ddaee2",
+      "company": "SKY",
+      "name": "Teste Portal",
+      "duration": "3.0 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_e01f5a84-5794-4a5f-adff-0ae5138366b7.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=UsamH92XC%2FJTskIn6h6txdF3Gn0%3D&Expires=1997961757",
+      "slug": "sky",
+      "result": true,
+      "createdAt": "2023-04-02 10:22:37.334"
+    },
+    {
+      "id": "28489bf8-f90e-4e4b-902f-834089d0d99e",
+      "company": "SKY",
+      "name": "Teste Portal",
+      "duration": "2.0 sec",
+      "urlPost": "https://uploads-checklists.s3.amazonaws.com/success_f15eee94-7d6f-49eb-a7f1-c7009cf0c732.png?AWSAccessKeyId=AKIAVQ7XH2LWHOXMNH5X&Signature=4tiOddXjbMgEJlFTsmq5nV%2BKutg%3D&Expires=1997962194",
+      "slug": "sky",
+      "result": true,
+      "createdAt": "2023-04-01 10:29:54.699"
     }
   ],
   "companies": [
@@ -96,25 +156,25 @@
       "id": "clgjrkpa47vct0blq3id55p0f",
       "name": "SKY",
       "slug": "sky",
-      "createdAt": "2023-04-16T18:52:16.229727+00:00"
+      "createdAt": "2023-04-16 18:52:16.229"
     },
     {
       "id": "clgjrkz107tj10bkgv8mi7kga",
       "name": "Neo Energia",
       "slug": "neo-energia",
-      "createdAt": "2023-04-16T18:52:28.878021+00:00"
+      "createdAt": "2023-04-16 18:52:28.878"
     },
     {
       "id": "clgjrl5l87tk80bkg3h3wysb8",
       "name": "Claro",
       "slug": "claro",
-      "createdAt": "2023-04-16T18:52:37.385979+00:00"
+      "createdAt": "2023-04-16 18:52:37.385"
     },
     {
       "id": "clgjrlesj7tla0bkgnq3cd04n",
       "name": "Negocie Online",
       "slug": "negocie-online",
-      "createdAt": "2023-04-16T18:52:49.313081+00:00"
+      "createdAt": "2023-04-16 18:52:49.313"
     }
   ]
 }

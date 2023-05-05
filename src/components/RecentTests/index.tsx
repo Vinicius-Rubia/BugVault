@@ -1,41 +1,32 @@
-import React, { useState, useEffect } from "react";
-import { DateFormatter, publishedDateRelativeToNow } from "../../utils/Formatter";
+import React from "react";
+import { DateFormatter, createdDateRelativeToNow } from "../../utils/Formatter";
 import ClaroImg from "../../assets/images/claro.png";
 import ElektroImg from "../../assets/images/elektro.png";
 import NegocieImg from "../../assets/images/negocie.png";
 import SkyImg from "../../assets/images/sky.png";
-import { api } from "../../lib/axios";
+import { useSelector } from "react-redux";
+import { selectChecklists, } from "../../redux/checklistsSlice";
+import { Link } from "react-router-dom";
 
 import * as C from "./styles";
 
 export const RecentTests: React.FC = () => {
-  const [recentLastChecklists, setRecentLastChecklists] = useState([]);
+  const allChecklists = useSelector(selectChecklists);
 
-  useEffect(() => {
-    const fetchRecentLastChecklists = async () => {
-      const response = await api.get("checklists", {
-        params: {
-          _sort: "createdAt",
-          _order: 'desc',
-          _limit: "4"
-        }
-      });
-
-      setRecentLastChecklists(response.data);
-    };
-
-    fetchRecentLastChecklists();
-  }, []);
+  const checklistsOrderned = [...allChecklists.checklists].sort((a: any, b: any) => (a.createdAt - b.createdAt)).slice(0, 4);
 
   return (
     <C.Container>
-      <h2>Checklists Recentes</h2>
+      <C.Header>
+        <h2>Checklists Recentes</h2>
+        <Link to="/checklists">Ver todos</Link>
+      </C.Header>
 
       <C.Grid>
-        {recentLastChecklists.length === 0 ? (
+        {checklistsOrderned.length === 0 ? (
           <h3 style={{color: "#FFFFFF"}}>Carregando...</h3>
         ) : (
-          recentLastChecklists.map((checklists: any) => (
+          checklistsOrderned.map((checklists: any) => (
             <C.Item key={checklists.id} result={checklists.result.toString()}>
               <div className="post">
                 <img src={checklists.urlPost} alt="Illustration" />
@@ -54,7 +45,7 @@ export const RecentTests: React.FC = () => {
                 <h3>{checklists.name}</h3>
                 <p>
                   {DateFormatter.format(new Date(checklists.createdAt))}{" "}
-                  &#x2022; {publishedDateRelativeToNow(checklists.createdAt)}{" "}
+                  &#x2022; {createdDateRelativeToNow(checklists.createdAt)}{" "}
                   atrás
                 </p>
               </C.Info>

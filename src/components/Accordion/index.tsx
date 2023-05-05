@@ -11,24 +11,24 @@ interface AccordionTriggerProps {
 }
 
 export const AccordionChecklists: React.FC = () => {
-  const AccordionTrigger = React.forwardRef<HTMLButtonElement, AccordionTriggerProps>(({ children, className, ...props }, forwardedRef) => (
-    <Accordion.Header className="AccordionHeader">
-      <Accordion.Trigger className={classNames('AccordionTrigger',className)} {...props} ref={forwardedRef}>
-        {children}
-        <MdKeyboardArrowDown className="AccordionChevron" size={22} />
-      </Accordion.Trigger>
-    </Accordion.Header>
-    ));
+  // const AccordionTrigger = React.forwardRef<HTMLButtonElement, AccordionTriggerProps>(({ children, className, ...props }, forwardedRef) => (
+  //   <Accordion.Header className="AccordionHeader">
+  //     <Accordion.Trigger className={classNames('AccordionTrigger',className)} {...props} ref={forwardedRef}>
+  //       {children}
+  //       <MdKeyboardArrowDown className="AccordionChevron" size={22} />
+  //     </Accordion.Trigger>
+  //   </Accordion.Header>
+  //   ));
 
-  const AccordionContent = React.forwardRef<HTMLDivElement, AccordionTriggerProps>(({ children, className, ...props }, forwardedRef) => (
-    <Accordion.Content className={classNames('AccordionContent', className)} {...props} ref={forwardedRef}>
-      <div className="AccordionContentText">{children}</div>
-    </Accordion.Content>
-  ));
+  // const AccordionContent = React.forwardRef<HTMLDivElement, AccordionTriggerProps>(({ children, className, ...props }, forwardedRef) => (
+  //   <Accordion.Content className={classNames('AccordionContent', className)} {...props} ref={forwardedRef}>
+  //     <div className="AccordionContentText">{children}</div>
+  //   </Accordion.Content>
+  // ));
 
   return (
     <C.Container>
-      <h1>Checklists</h1>
+      {/* <h1>Checklists</h1>
       <Accordion.Root className="AccordionRoot" type="single" collapsible>
         <Accordion.Item className="AccordionItem" value="item-1">
           <AccordionTrigger>
@@ -41,7 +41,7 @@ export const AccordionChecklists: React.FC = () => {
             Yes. It adheres to the WAI-ARIA design pattern.
           </AccordionContent>
         </Accordion.Item>
-      </Accordion.Root>
+      </Accordion.Root> */}
     </C.Container>
   );
 };

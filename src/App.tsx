@@ -2,11 +2,13 @@ import { BrowserRouter } from "react-router-dom"
 import { DefaultTheme, ThemeProvider } from "styled-components"
 import { Header } from "./components/Header"
 import { GlobalStyle } from "./styles/global"
+import { SideBar } from "./components/SideBar"
+import { Provider } from "react-redux"
 import usePersistedState from "./utils/usePersistedState"
 import light from "./styles/themes/light"
 import dark from "./styles/themes/dark"
-import { SideBar } from "./components/SideBar"
 import Router from "./routes/router"
+import store from "./redux/store"
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark)
@@ -17,16 +19,18 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <div id="layout">
-          <SideBar toogleTheme={toogleTheme} />
-          <div id="main">
-            <Header />
-            <Router />
+      <Provider store={store}>
+        <BrowserRouter>
+          <div id="layout">
+            <SideBar toogleTheme={toogleTheme} />
+            <div id="main">
+              <Header />
+              <Router />
+            </div>
           </div>
-        </div>
-      </BrowserRouter>
-      <GlobalStyle />
+        </BrowserRouter>
+        <GlobalStyle />
+      </Provider>
     </ThemeProvider>
   )
 }
